@@ -1,16 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
+/* Add NavLink to import */
+import { BrowserRouter} from "react-router-dom";
+import App from "./App"
 
-function Home() {
-  return (
-    <div>
-      <h1>Home!</h1>
-    </div>
-  );
-}
+/* Add basic styling for NavLinks */
 
-function App() {
-  return <Home />;
-}
-
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <BrowserRouter>
+  <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
